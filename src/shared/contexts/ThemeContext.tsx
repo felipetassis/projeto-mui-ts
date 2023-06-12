@@ -17,7 +17,7 @@ interface IAppThemeProviderProps {
 
 export const useAppThemeContext = () => {
     return useContext(ThemeContext);
-}
+};
 
 export const AppThemeProvider: React.FC<IAppThemeProviderProps> = ({ children }) => {
     const [themeName, setThemeName] = useState<'light' | 'dark'>('light');
@@ -41,4 +41,4 @@ export const AppThemeProvider: React.FC<IAppThemeProviderProps> = ({ children })
         </ThemeProvider>
     </ThemeContext.Provider>
    );
-}
+};
